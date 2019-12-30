@@ -89,9 +89,17 @@
     <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Actions\MoveBackward.cs" />
+    <Compile Include="Actions\MoveForward.cs" />
+    <Compile Include="Actions\Stop.cs" />
+    <Compile Include="Actions\TurnLeft.cs" />
+    <Compile Include="Actions\TurnRight.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Command\IOTHUB.cs" />
+    <Compile Include="Command\UI.cs" />
+    <Compile Include="Command\WEBAPI.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -136,6 +144,10 @@
     <SDKReference Include="WindowsIoT, Version=10.0.10586.0">
       <Name>Windows IoT Extensions for the UWP</Name>
     </SDKReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Actions\Dispose\" />
+    <Folder Include="Actions\Initialize\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
