@@ -89,17 +89,20 @@
     <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Actions\MoveBackward.cs" />
-    <Compile Include="Actions\MoveForward.cs" />
-    <Compile Include="Actions\Stop.cs" />
-    <Compile Include="Actions\TurnLeft.cs" />
-    <Compile Include="Actions\TurnRight.cs" />
+    <Compile Include="Abstract Command\ICommand.cs" />
+    <Compile Include="Actions\Move\MoveBackward.cs" />
+    <Compile Include="Actions\Move\MoveForward.cs" />
+    <Compile Include="Actions\Move\Start.cs" />
+    <Compile Include="Actions\Move\Stop.cs" />
+    <Compile Include="Actions\Move\TurnLeft.cs" />
+    <Compile Include="Actions\Move\TurnRight.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Command\IOTHUB.cs" />
-    <Compile Include="Command\UI.cs" />
-    <Compile Include="Command\WEBAPI.cs" />
+    <Compile Include="Device\RaspberryPiDevice.cs" />
+    <Compile Include="Remote Controller\IOTHUB.cs" />
+    <Compile Include="Remote Controller\UI.cs" />
+    <Compile Include="Remote Controller\WEBAPI.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>

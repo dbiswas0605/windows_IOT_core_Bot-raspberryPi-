@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bot.Command
+namespace Bot.Actions
 {
-    class WEBAPI
+    public interface ICommand
     {
+        void Execute();
     }
 }

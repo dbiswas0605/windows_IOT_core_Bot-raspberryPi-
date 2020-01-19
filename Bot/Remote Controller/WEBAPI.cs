@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bot.Command
+namespace Bot.RemoteController
 {
-    class UI
+    class WEBAPI
     {
     }
 }

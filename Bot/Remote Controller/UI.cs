@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bot.Actions
+namespace Bot.RemoteController
 {
-    class Stop
+    class UI
     {
     }
 }
